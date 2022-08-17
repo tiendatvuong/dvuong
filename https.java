@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-import javax.net.ssl.HttpURLConnection;
+import javax.net.ssl.URLConnection;
 
 
 public class Dos implements Runnable {
@@ -119,7 +119,7 @@ public class Dos implements Runnable {
     private void checkConnection(String url) throws Exception {
         System.out.println("Ket noi toi Website");
         URL obj = new URL(url);
-        httpsHttpURLConnection con = (httpsHttpURLConnection) obj.openConnection();
+        httpHttpURLConnection con = (httpsHttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
 
@@ -163,7 +163,7 @@ public class Dos implements Runnable {
 
     private void getAttack(String url) throws Exception {
         URL obj = new URL(url);
-        httpsHttpURLConnection con = (httpsHttpURLConnection) obj.openConnection();
+        httpHttpURLConnection con = (httpHttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
 
